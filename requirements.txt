@@ -1,0 +1,6 @@
+pip
+ollama
+edge-tts
+readchar
+pygame-ce
+python-dotenv
