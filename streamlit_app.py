@@ -16,7 +16,7 @@ from dt_tts_edge import (
 from dt_audio_player import play_audio_file
 from ae_remove_temp_files import clear_root_folder
 
-__version__: Final[str] = "1.0.0"
+__version__: Final[str] = "1.1.0"
 VERSION: Final[str] = __version__
 
 clear_root_folder()
@@ -54,7 +54,9 @@ if user_prompt:
     messages.append(user_message)
 
     response, completion_tokens, prompt_tokens = chat(
-        model_name=MODEL_NAME_OFFLINE, messages=messages
+        model_name=MODEL_NAME_OFFLINE,
+        messages=messages,
+        temperature=0.0,
     )
 
     assistant_answer: Optional[str] = response
@@ -94,7 +96,7 @@ if user_prompt:
                         voice=VOICES_FEMALE[1],
                     )
                 )
-                
+
                 st.divider()
 
                 st.write(
