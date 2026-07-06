@@ -1,4 +1,4 @@
-# Quik usage
+# Quick usage
 
 ```bash
 py -3.14 -m venv .venv.3.14
