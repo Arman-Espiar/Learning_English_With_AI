@@ -17,7 +17,7 @@ from dt_audio_player import play_audio_file
 from ae_remove_temp_files import clear_root_folder
 from ae_show_offline_models import offline_models_list
 
-__version__: Final[str] = "3.0.0"
+__version__: Final[str] = "3.0.1"
 VERSION: Final[str] = __version__
 
 clear_root_folder()
@@ -45,7 +45,7 @@ with st.sidebar:
         st.session_state.selected_model = model_names[0] if model_names else None
 
     selected_model = st.selectbox(
-        "Model",
+        "مدل خود را انتخاب کنید:",
         options=model_names,
         key="selected_model",
     )
