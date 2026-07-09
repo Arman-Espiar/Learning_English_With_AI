@@ -152,3 +152,18 @@ Final Rules
 • Never split phrasal verbs. Keep the verb and particle together as one verb unit.
 • Label the grammatical function of a phrase, not only its internal structure.
 """.strip()
+
+STREAMLIT_STYLE: Final[str] = """
+<style>
+    @import url('https://fonts.cdnfonts.com/css/iransansx');
+    
+    html, body, p, h1, h2, h3, h4, h5, h6, input, textarea, li {
+        font-family: 'IRANSansX', tahoma !important;
+    }
+    
+    .block-container, section, input, textarea, div.stMarkdown, div.stHeading {
+        direction: rtl;
+        text-align: justify;
+    }
+</style>
+"""
