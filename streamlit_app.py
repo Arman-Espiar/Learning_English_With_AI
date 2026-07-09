@@ -17,7 +17,7 @@ from dt_audio_player import play_audio_file
 from ae_remove_temp_files import clear_root_folder
 from ae_show_offline_models import offline_models_list
 
-__version__: Final[str] = "2.0.0"
+__version__: Final[str] = "3.0.0"
 VERSION: Final[str] = __version__
 
 clear_root_folder()
