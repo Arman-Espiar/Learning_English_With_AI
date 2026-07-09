@@ -4,6 +4,7 @@ import asyncio
 from typing import Final, Optional
 import streamlit as st
 import dt_llm_utility
+import learning_english_constants
 from dt_utility import format_seconds
 from dtx_ollama import (
     chat,
@@ -16,7 +17,8 @@ from dt_tts_edge import (
 from dt_audio_player import play_audio_file
 from ae_remove_temp_files import clear_root_folder
 
-__version__: Final[str] = "1.1.0"
+
+__version__: Final[str] = "2.0.0"
 VERSION: Final[str] = __version__
 
 clear_root_folder()
@@ -42,7 +44,7 @@ if user_prompt:
 
     SYSTEM_MESSAGE: dict = {
         dt_llm_utility.KEY_NAME_ROLE: dt_llm_utility.ROLE_SYSTEM,
-        dt_llm_utility.KEY_NAME_CONTENT: dt_llm_utility.SYSTEM_PROMPT,
+        dt_llm_utility.KEY_NAME_CONTENT: learning_english_constants.SYSTEM_PROMPT,
     }
     messages.append(SYSTEM_MESSAGE)
 
